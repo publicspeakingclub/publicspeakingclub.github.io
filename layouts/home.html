@@ -1,0 +1,10 @@
+{{ define "headMain"}}
+{{ $homeStyle := resources.Get "scss/home.scss" | css.Sass | resources.Minify}}
+<link rel="stylesheet" href="{{$homeStyle.Permalink}}">
+{{end}}
+
+{{ define "bodyMain"}}
+
+{{ .Content }}
+
+{{end}}

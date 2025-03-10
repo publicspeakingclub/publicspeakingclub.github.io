@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>{{ .Page.Title }}</title>
+
+    {{ $mainStyle := resources.Get "scss/main.scss" | css.Sass | resources.Minify}}
+    <link rel="stylesheet" href="{{$mainStyle.Permalink}}">
+
+    {{ block "headMain" .}} {{end}}
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div><span> <a href="/"> BISC Public Speaking Club </a> </span>
+        </div>
+        <div class="navoptions">
+            <a href="/pages/rules">
+                Rules
+            </a>
+
+            <a href="/pages/rules">
+                About
+            </a>
+
+        </div>
+    </div>
+
+    <main>
+        {{ block "bodyMain" . }} {{end}}
+    </main>
+</body>
+
+</html>

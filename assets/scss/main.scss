@@ -1,0 +1,117 @@
+@import 'variables';
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+
+html,
+body {
+    background-color: $Normal-Background;
+    color: $Normal-Black-Text;
+    font-family: "Kanit", sans-serif;
+    font-size: $Normal-Font-Size;
+    margin: 0;
+}
+
+@mixin Padding-Verticle($pad) {
+    padding-left: $pad;
+    padding-right: $pad;
+}
+
+.navbar {
+    background-color: $Normal-Accent;
+    font-family: 'Merriweather';
+    padding: $Padding-Normal;
+    height: $Large-Font-Size * 2.5;
+    box-sizing: border-box;
+    font-weight: 750;
+    flex-direction: row;
+    justify-content: space-between;
+    display: flex;
+    top: 0;
+    color: $Light-White-Text;
+    gap: $Padding-Normal;
+    align-items: center;
+    position: sticky;
+
+
+    @include Padding-Verticle($Padding-Normal * 4);
+
+    img {
+        max-height: 100%;
+    }
+
+    div {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    a {
+        color: $Light-White-Text;
+        border-radius: $Radius-Normal;
+        text-decoration: none;
+        padding: $Padding-Normal;
+        @include Padding-Verticle($Padding-Normal * 2);
+        background-color: $Light-Accent;
+
+
+        transition: 50ms;
+
+        &:hover {
+            background-color: $Normal-Secondary;
+        }
+    }
+
+    span {
+        display: flex;
+        text-wrap: nowrap;
+        align-items: center;
+        font-size: $Large-Font-Size;
+
+        a {
+            background-color: $Normal-Accent;
+
+            &:hover {
+                background-color: $Normal-Accent;
+            }
+        }
+    }
+
+}
+
+.navoptions {
+    font-size: $Large-Font-Size / 1.5;
+    font-family: "Kanit";
+    font-weight: 400;
+    gap: $Padding-Normal * 2;
+}
+
+h1 {
+    font-family: 'Merriweather';
+}
+
+li::marker {
+    color: $Dark-Background;
+    font-size: $Normal-Font-Size / 0.75;
+}
+
+ol {
+    gap: $Padding-Normal;
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    padding-bottom: $Padding-Normal;
+    border-bottom: 1px dotted $Dark-Background;
+}
+
+li:last-of-type {
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+
+main {
+    margin: auto;
+    padding: $Padding-Normal * 2;
+    max-width: 1200px;
+    @include Padding-Verticle($Padding-Normal * 8);
+}
