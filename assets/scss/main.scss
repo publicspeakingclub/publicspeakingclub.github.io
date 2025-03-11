@@ -18,11 +18,17 @@ body {
     margin: 0;
     width: 100vw;
     overflow-x: clip;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 main {
     margin: auto;
-    padding: calc(#{$Padding-Normal} * 5);
+    margin-top: 0;
+    box-sizing: border-box;
+    padding: calc(#{$Padding-Normal} * 4);
+    width: 100%;
     max-width: 1200px;
     @include Padding-Verticle(calc(#{$Padding-Normal} * 8));
 }
@@ -96,69 +102,33 @@ main {
     font-size: calc(#{Large-Font-Size} / 1.5);
     font-family: "Kanit";
     font-weight: 400;
-    gap: calc(#{$Padding-Normal}* 2);
     display: flex;
-}
 
-
-.navDropDownButton {
-    display: none;
-    height: calc(#{$Padding-Normal} * 8);
-
-    background-color: $Light-Accent;
-    border-radius: $Radius-Normal;
-
-    transition: $Normal-Timing;
-
-    &:has(input:checked) {
-        transition: $Normal-Timing;
-        background-color: $Normal-Red;
-
-        &:hover {
-            background-color: $Dark-Secondary;
-        }
+    a {
+        border-radius: 0;
+        border-right: 2px solid $Normal-Accent;
     }
 
-    &:hover {
-        background-color: $Normal-Secondary;
+    a:first-of-type {
+        border-radius: $Radius-Normal 0 0 $Radius-Normal;
     }
 
-    input {
-        display: none;
+    a:last-of-type {
+        border-radius: 0 $Radius-Normal $Radius-Normal 0;
+        border-right: 0;
     }
 }
 
 @media screen and (max-width: 850px) {
     .navbar {
+        flex-direction: column;
+        height: fit-content;
+        padding: calc(#{$Padding-Normal} * 2);
+
         .navoptions {
-            position: absolute;
-            top: calc(#{$Large-Font-Size} * 2.5);
-            right: -100%;
-
-            border-radius: 0 0 0 $Radius-Normal*2;
-
-            padding: $Padding-Normal calc(#{$Padding-Normal}*4) calc(#{$Padding-Normal}*4) 0;
-            flex-direction: column;
-
-
-
-            height: fit-content;
-            width: fit-content;
-            background-color: $Normal-Accent;
-
-            a {
-                text-align: center;
-                width: 100%;
-            }
+            width: 100%;
+            justify-content: center;
         }
-    }
-
-    .navDropDownButton {
-        display: flex;
-    }
-
-    .navDropDownButton:has(input:checked)+.navoptions {
-        right: 0;
     }
 }
 
@@ -188,4 +158,19 @@ li {
 li:last-of-type {
     padding-bottom: 0;
     border-bottom: 0;
+}
+
+// Footer
+
+footer {
+    text-align: center;
+
+    bottom: 0;
+
+    p {
+        color: $Dark-Background;
+        margin: 0;
+    }
+
+    padding: calc(#{$Padding-Normal} * 8);
 }
