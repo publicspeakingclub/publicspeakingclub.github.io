@@ -133,8 +133,13 @@ main {
 }
 
 // Markdown
-h1 {
+h1,
+h2,
+h3 {
     font-family: 'Merriweather';
+}
+
+h1 {
     font-size: $Large-Font-Size;
 }
 
@@ -160,17 +165,61 @@ li:last-of-type {
     border-bottom: 0;
 }
 
+main>h1 {
+    font-size: calc(#{$Large-Font-Size} * 1.5);
+    border-bottom: 1px dotted $Dark-Background;
+}
+
+main p {
+    padding-left: calc(#{$Normal-Font-Size} * 2);
+}
+
+main h2 {
+    padding-left: $Normal-Font-Size;
+}
+
+main div {
+    padding-left: $Normal-Font-Size;
+}
+
+hr {
+    border: none;
+    border-bottom: 1px dotted $Dark-Background;
+}
+
+strong {
+    color: $Dark-Accent;
+}
+
+em {
+    color: $Dark-Secondary;
+}
+
 // Footer
 
 footer {
-    text-align: center;
+    border-top: 1px dotted $Dark-Background;
 
+    text-align: center;
     bottom: 0;
+    font-size: calc(#{$Normal-Font-Size} / 1.25);
+
+    color: $Dark-Background;
 
     p {
         color: $Dark-Background;
         margin: 0;
     }
 
-    padding: calc(#{$Padding-Normal} * 8);
+    a {
+        color: $Dark-Background;
+    }
+
+    box-sizing: border-box;
+
+    padding-top: calc(#{$Padding-Normal} * 8);
+    padding-bottom: calc(#{$Padding-Normal} * 8);
+
+    margin-right: calc(#{$Padding-Normal} * 8);
+    margin-left: calc(#{$Padding-Normal} * 8);
 }
