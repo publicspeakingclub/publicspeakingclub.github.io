@@ -1,7 +1,7 @@
 +++
 date = '2025-03-10T21:02:53+06:00'
 draft = false 
-title = 'Rules'
+title = 'Events'
 +++
 
 ## Solo Drama

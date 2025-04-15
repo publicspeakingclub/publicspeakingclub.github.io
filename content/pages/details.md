@@ -5,13 +5,13 @@ title = 'Details'
 +++
 
 # Date of the Fest: 
-25 and 26 April, 2025.
+*25 and 26 April, 2025*
 
 # Time of the Fest: 
-9:00 AM to 5:00 PM.
+*9:00 AM* to *5:00 PM*
 
 # Participation fee: 
-200৳ (Lunch included). 
+*200৳* (Lunch included). 
 The purchase of the participation ticket will allow students to access **all events**. But some events may run parallelly to each other.
 
 # Dress code:
