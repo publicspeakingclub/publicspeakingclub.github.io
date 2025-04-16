@@ -3,8 +3,23 @@
 <link rel="stylesheet" href="{{$homeStyle.Permalink}}">
 {{end}}
 
-{{ define "bodyMain"}}
+{{ define "bodyBeforeMain"}}
 
+<div class="heading">
+    <h1>BISC Public Speaking Club</h1>
+    <p>Crafting speakers, Creating leaders</p>
+
+    <p class="introduction">The BISC Public Speaking Club hosts thought-provoking and engaging sessions every 2nd week
+        at Bangladesh
+        International School and College, Moakhali DOHS, Dhaka. The main activities of the club include providing
+        speakers of all skill levels an opportunity to interact and gain live feedback from an attentive audience,
+        discussing current events and trends, exploring the use of different mediums in association with public speaking
+        and providing students with a platform to practice English speeches in a safe and nonjudgmental environment.</p>
+</div>
+
+{{end}}
+
+{{ define "bodyMain"}}
 
 
 {{ .Content }}

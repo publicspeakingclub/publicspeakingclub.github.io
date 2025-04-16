@@ -1,0 +1,15 @@
+{{ define "headMain"}}
+{{ $festStyle := resources.Get "scss/fest.scss" | css.Sass | resources.Minify}}
+<link rel="stylesheet" href="{{$festStyle.Permalink}}">
+{{end}}
+{{ define "bodyMain" }}
+<h1> {{ .Title }} </h1>
+{{ .Content }}
+<hr>
+<h3> Location </h3>
+<div class="maps">
+    <iframe class="embed"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.048076399901!2d90.39193357508526!3d23.781302287589703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c76a19edbbcb%3A0xae6588cec5fc2273!2sBangladesh%20International%20School%20and%20College!5e0!3m2!1sen!2sbd!4v1744800911515!5m2!1sen!2sbd"
+        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+{{end}}

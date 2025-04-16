@@ -1,5 +1,29 @@
+@import 'variables';
+
 html,
 body {
-    background-color: #ffe5e5;
+    background-color: $Normal-Background;
     color: #070709;
+}
+
+.heading {
+    background-color: $Normal-AccentBG;
+    height: 100vh;
+
+    color: $Normal-Accent;
+
+    text-align: center;
+
+    h1 {
+        width: 100%;
+        font-size: calc(#{$Large-Font-Size} * 2);
+        margin-bottom: 0;
+    }
+
+    .introduction {
+        padding: $Normal-Spacing*16;
+        color: $Normal-Black-Text;
+        text-align: justify;
+        text-align-last: center;
+    }
 }

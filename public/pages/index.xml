@@ -13,7 +13,7 @@
       <link>http://localhost:1313/pages/details/</link>
       <pubDate>Mon, 10 Mar 2025 21:02:53 +0600</pubDate>
       <guid>http://localhost:1313/pages/details/</guid>
-      <description>&lt;h1 id=&#34;date-of-the-fest&#34;&gt;Date of the Fest:&lt;/h1&gt;&#xA;&lt;p&gt;&lt;em&gt;25 and 26 April, 2025&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;time-of-the-fest&#34;&gt;Time of the Fest:&lt;/h1&gt;&#xA;&lt;p&gt;&lt;em&gt;9:00 AM&lt;/em&gt; to &lt;em&gt;5:00 PM&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;participation-fee&#34;&gt;Participation fee:&lt;/h1&gt;&#xA;&lt;p&gt;&lt;em&gt;200৳&lt;/em&gt; (Lunch included).&#xA;The purchase of the participation ticket will allow students to access &lt;strong&gt;all events&lt;/strong&gt;. But some events may run parallelly to each other.&lt;/p&gt;&#xA;&lt;h1 id=&#34;dress-code&#34;&gt;Dress code:&lt;/h1&gt;&#xA;&lt;p&gt;&lt;em&gt;&lt;strong&gt;Students must wear their ID card.&lt;/strong&gt;&lt;/em&gt;&#xA;Other than that, wearing school/college uniform is preferred and wearing civil dress is optional.&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;date-of-the-fest&#34;&gt;Date of the Fest&lt;/h1&gt;&#xA;&lt;p&gt;&lt;em&gt;25 and 26 April, 2025&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;time-of-the-fest&#34;&gt;Time of the Fest&lt;/h1&gt;&#xA;&lt;p&gt;&lt;em&gt;9:00 AM&lt;/em&gt; to &lt;em&gt;5:00 PM&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;participation-fee&#34;&gt;Participation fee&lt;/h1&gt;&#xA;&lt;p&gt;&lt;em&gt;200৳&lt;/em&gt; (Lunch included).&#xA;The purchase of the participation ticket will allow students to access &lt;strong&gt;all events&lt;/strong&gt;. But some events may run parallelly to each other.&lt;/p&gt;&#xA;&lt;h1 id=&#34;dress-code&#34;&gt;Dress code&lt;/h1&gt;&#xA;&lt;p&gt;&lt;em&gt;&lt;strong&gt;Students must wear their ID card.&lt;/strong&gt;&lt;/em&gt;&#xA;Other than that, wearing school/college uniform is preferred and wearing civil dress is optional.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Events</title>
@@ -21,6 +21,13 @@
       <pubDate>Mon, 10 Mar 2025 21:02:53 +0600</pubDate>
       <guid>http://localhost:1313/pages/events/</guid>
       <description>&lt;h2 id=&#34;solo-drama&#34;&gt;Solo Drama&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Event Type&lt;/strong&gt;: &lt;em&gt;Solo Competition&lt;/em&gt;&lt;br&gt;&#xA;&lt;strong&gt;Medium&lt;/strong&gt;: &lt;em&gt;Bangla and English&lt;/em&gt;&lt;br&gt;&#xA;&lt;strong&gt;Time Limit&lt;/strong&gt;: &lt;em&gt;3 minutes per performance&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Task&lt;/strong&gt;: A single performer will narrate and embody the drama, either by portraying multiple characters or delivering the entire message through a singular character, ensuring a cohesive storyline.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Judging&lt;/strong&gt;: &lt;em&gt;The judges will select the top three performers.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;group-drama&#34;&gt;Group Drama&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Event Type&lt;/strong&gt;: &lt;em&gt;Group Competition&lt;/em&gt;&lt;br&gt;&#xA;&lt;strong&gt;Medium&lt;/strong&gt;: &lt;em&gt;Bangla and English&lt;/em&gt;&lt;br&gt;&#xA;&lt;strong&gt;Time Limit&lt;/strong&gt;: &lt;em&gt;10 minutes per performance&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Task&lt;/strong&gt;: Each group, consisting of up to 15 members, will perform a drama of any genre. While acting roles are encouraged, non-acting members may contribute as directors, prop designers, or in other supportive roles.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Registration</title>
+      <link>http://localhost:1313/pages/registration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pages/registration/</guid>
+      <description></description>
     </item>
   </channel>
 </rss>

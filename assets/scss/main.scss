@@ -23,14 +23,25 @@ body {
     min-height: 100vh;
 }
 
+.noticeHeader {
+    margin: 0;
+    text-align: center;
+    background-color: $Light-Accent;
+    color: $Light-White-Text;
+    text-shadow: $Normal-Secondary 0px 0px 4px;
+}
+
 main {
     margin: auto;
     margin-top: 0;
     box-sizing: border-box;
     padding: calc(#{$Padding-Normal} * 4);
     width: 100%;
-    max-width: 1200px;
     @include Padding-Verticle(calc(#{$Padding-Normal} * 8));
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 
 // Navbar
@@ -57,7 +68,6 @@ main {
     }
 
     div {
-        height: 10075;
         display: flex;
         align-items: center;
     }
@@ -78,8 +88,16 @@ main {
         }
     }
 
-    .EventsButton {
-        background-color: $Dark-Red;
+    .eventsButton {
+        background-color: $Normal-Red;
+    }
+
+    .festButton {
+        background-color: $Normal-Yellow;
+    }
+
+    .registrationButton {
+        background-color: $Normal-Magenta;
     }
 
     span {
@@ -102,6 +120,12 @@ main {
     top: 0;
 }
 
+.navoptionsarea {
+    display: flex;
+    flex-direction: row;
+    gap: $Normal-Spacing*2;
+}
+
 .navoptions {
     font-size: calc(#{Large-Font-Size} / 1.5);
     font-family: "Kanit";
@@ -120,6 +144,10 @@ main {
     a:last-of-type {
         border-radius: 0 $Radius-Normal $Radius-Normal 0;
         border-right: 0;
+    }
+
+    a:only-child {
+        border-radius: $Radius-Normal;
     }
 }
 
@@ -187,6 +215,7 @@ main div {
 }
 
 hr {
+    width: 100%;
     border: none;
     border-bottom: 1px dotted $Dark-Background;
 }

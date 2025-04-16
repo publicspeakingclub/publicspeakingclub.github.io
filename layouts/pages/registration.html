@@ -1,0 +1,13 @@
+{{ define "headMain"}}
+{{ $registrationStyle := resources.Get "scss/registration.scss" | css.Sass | resources.Minify}}
+<link rel="stylesheet" href="{{$registrationStyle.Permalink}}">
+{{end}}
+{{ define "bodyMain" }}
+<h1> {{ .Title }} </h1>
+{{ .Content }}
+<div class="form">
+    <iframe class="embed"
+        src="https://docs.google.com/forms/d/e/1FAIpQLScLwFsUwCtjqoCS0UIVZrD5sfldFWsqJmB6-1kciUlDqcrxNQ/viewform?embedded=true&hl=en"
+        frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+</div>
+{{end}}

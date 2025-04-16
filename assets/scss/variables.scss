@@ -1,18 +1,20 @@
-$Normal-Accent: #012fcc;
-$Light-Accent: #3771ff;
-$Dark-Accent: #001b83;
+$Normal-Accent: #2447bc;
+$Light-Accent: #3360f7;
+$Dark-Accent: #132974;
 
-$Normal-Background: #ffe5e5;
-$Light-Background: #c7b3b2;
-$Dark-Background: #786b6a;
+$Normal-AccentBG: #bcc8e3;
 
-$Normal-Secondary: #19c800;
-$Light-Secondary: #63ff56;
-$Dark-Secondary: #0b7900;
+$Normal-Background: #e3d8b6;
+$Light-Background: #f6ebc6;
+$Dark-Background: #aca389;
 
-$Normal-Red: #ca0034;
-$Light-Red: #ff5663;
-$Dark-Red: #7f001d;
+$Normal-Secondary: #40b746;
+$Light-Secondary: #59f761;
+$Dark-Secondary: #226c26;
+
+$Normal-Red: #af3843;
+$Light-Red: #e44c5a;
+$Dark-Red: #712129;
 
 $Normal-Black-Text: #272730;
 $Light-Black-Text: #656578;
@@ -22,9 +24,14 @@ $Normal-White-Text: #b7b7c7;
 $Light-White-Text: #eaebff;
 $Dark-White-Text: #6d6e78;
 
+$Normal-Yellow: #ad902d;
+$Normal-Magenta: #af386f;
+
 $Padding-Normal: calc(max(min(1vw, 4px), 2px));
 
 $Radius-Normal: 6px;
+
+$Normal-Spacing: 4px;
 
 $Large-Font-Size: calc(max(min(6vw, 32px), 14px));
 $Normal-Font-Size: calc(max(min(3vw, 18px), 8px));
