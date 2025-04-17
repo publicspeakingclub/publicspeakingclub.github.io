@@ -151,6 +151,40 @@ main {
     }
 }
 
+.festoptions::before {
+    content: "Fest";
+    margin-right: $Normal-Spacing * 2;
+    margin-left: $Normal-Spacing;
+    font-size: calc(#{$Normal-Font-Size} * 1.5);
+}
+
+.festoptions {
+    padding: $Normal-Spacing;
+    background-color: $Normal-Secondary;
+    border-radius: $Normal-Spacing + $Radius-Normal;
+
+    a {
+        border-radius: 0;
+        border-top: 4px solid $Normal-Accent;
+        border-bottom: 4px solid $Normal-Accent;
+        border-right: 2px solid $Normal-Accent;
+    }
+
+    a:first-of-type {
+        border-left: 4px solid $Normal-Accent;
+        border-radius: $Radius-Normal 0 0 $Radius-Normal;
+    }
+
+    a:last-of-type {
+        border-radius: 0 $Radius-Normal $Radius-Normal 0;
+        border-right: 4px solid $Normal-Accent;
+    }
+
+    a:only-child {
+        border-radius: $Radius-Normal;
+    }
+}
+
 @media screen and (max-width: 850px) {
     .navbar {
         flex-direction: column;
