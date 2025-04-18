@@ -60,10 +60,29 @@
         
 <h1> Registration </h1>
 
-<div class="form">
-    <iframe class="embed"
+<div class="form" id="form">
+    <iframe id="embed" class="embed"
         src="https://docs.google.com/forms/d/e/1FAIpQLScLwFsUwCtjqoCS0UIVZrD5sfldFWsqJmB6-1kciUlDqcrxNQ/viewform?embedded=true&hl=en"
         frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+    <script>
+        var embed = document.getElementById("embed");
+        var form = document.getElementById("form");
+
+        function resizeEmbed() {
+            let embedSize = form.getBoundingClientRect();
+
+            embed.height = embedSize.height;
+            embed.width = embedSize.width;
+
+            console.log("SDKJFSHDFLSDF");
+        }
+
+        resizeEmbed();
+
+        document.onload = resizeEmbed;
+        window.addEventListener("resize", resizeEmbed);
+    </script>
 </div>
 
     </main>

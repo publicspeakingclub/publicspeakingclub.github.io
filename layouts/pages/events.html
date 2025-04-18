@@ -1,0 +1,10 @@
+{{ define "headMain" }}
+{{ $markdownStyle := resources.Get "scss/markdown.scss" | css.Sass | resources.Minify}}
+<link rel="stylesheet" href="{{$markdownStyle.Permalink}}">
+{{end}}
+
+{{ define "bodyMain" }}
+
+{{ .Content }}
+
+{{end}}

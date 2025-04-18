@@ -1,10 +1,15 @@
 @import 'variables.scss';
 
+main {
+    display: flex;
+    flex-direction: column;
+}
+
 .form {
     background-color: $Light-Background;
     outline: $Dark-Background 1px solid;
-    flex: 1;
     display: block;
+    min-height: 50vh;
     height: 100%;
     width: 100%;
     padding: 0;

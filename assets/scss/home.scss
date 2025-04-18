@@ -7,8 +7,8 @@ body {
 }
 
 .heading {
-    background-color: $Normal-AccentBG;
-    height: 100vh;
+    background-image: linear-gradient($Normal-AccentBG, #00000000);
+    height: fit-content;
 
     color: $Normal-Accent;
 
@@ -22,8 +22,113 @@ body {
 
     .introduction {
         padding: $Normal-Spacing*16;
+        padding-top: $Normal-Spacing;
         color: $Normal-Black-Text;
         text-align: justify;
         text-align-last: center;
+    }
+}
+
+.festNotice {
+    padding-left: 0;
+    background-color: $Normal-AccentBG;
+    outline: $Dark-Background 1px solid;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    border-radius: $Radius-Normal * 3;
+
+    width: 95%;
+    align-self: center;
+    overflow: hidden;
+
+    .header {
+        margin: 0;
+        text-align: center;
+        color: $Normal-Accent;
+        padding: $Normal-Spacing * 2;
+
+        border-bottom: 1px dotted $Normal-Accent;
+
+        margin-top: $Normal-Spacing * 2;
+
+        h2 {
+            width: 100%;
+            margin: 0;
+            text-align: center;
+        }
+    }
+
+    .description {
+        padding: $Normal-Spacing*8;
+        padding-top: $Normal-Spacing;
+        padding-bottom: $Normal-Spacing;
+        color: $Normal-Black-Text;
+        text-align: justify;
+        text-align-last: center;
+    }
+
+    .timerCard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: $Radius-Normal * 3;
+        background-color: $Normal-Accent;
+        margin: $Normal-Spacing * 6;
+    }
+
+    .timer {
+        color: $Light-White-Text;
+        margin: $Normal-Spacing * 3;
+
+        h2 {
+            margin: 0;
+            color: $Normal-Yellow;
+            font-family: monospace;
+        }
+
+        p {
+            margin: 0;
+        }
+    }
+
+    .buttons {
+        display: flex;
+        gap: $Normal-Spacing * 3;
+        margin: $Normal-Spacing * 3;
+        margin-top: 0;
+
+        a {
+            color: $Light-White-Text;
+            border-radius: $Radius-Normal;
+            text-decoration: none;
+            padding: $Padding-Normal;
+            background-color: $Light-Accent;
+
+
+            transition: $Normal-Timing;
+
+            &:hover {
+                background-color: $Normal-Secondary;
+            }
+        }
+    }
+
+    .images {
+        display: flex;
+        align-items: center;
+        height: 600px;
+        justify-content: center;
+        outline: $Dark-Background 1px solid;
+        max-height: 25vw;
+        margin-top: $Normal-Spacing * 6;
+
+        img {
+
+            max-height: 100%;
+        }
     }
 }

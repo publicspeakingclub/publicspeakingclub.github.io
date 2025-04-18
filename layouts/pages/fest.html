@@ -1,6 +1,9 @@
 {{ define "headMain"}}
 {{ $festStyle := resources.Get "scss/fest.scss" | css.Sass | resources.Minify}}
 <link rel="stylesheet" href="{{$festStyle.Permalink}}">
+
+{{ $markdownStyle := resources.Get "scss/markdown.scss" | css.Sass | resources.Minify}}
+<link rel="stylesheet" href="{{$markdownStyle.Permalink}}">
 {{end}}
 {{ define "bodyMain" }}
 <h1> {{ .Title }} </h1>

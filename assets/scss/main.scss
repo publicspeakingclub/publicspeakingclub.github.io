@@ -23,6 +23,12 @@ body {
     min-height: 100vh;
 }
 
+h1,
+h2,
+h3 {
+    font-family: 'Merriweather';
+}
+
 .noticeHeader {
     margin: 0;
     text-align: center;
@@ -172,20 +178,20 @@ main {
 
     a:first-of-type {
         border-left: 4px solid $Normal-Accent;
-        border-radius: $Radius-Normal 0 0 $Radius-Normal;
+        border-radius: $Radius-Normal + 4px 0 0 $Radius-Normal + 4px;
     }
 
     a:last-of-type {
-        border-radius: 0 $Radius-Normal $Radius-Normal 0;
+        border-radius: 0 $Radius-Normal + 4px $Radius-Normal +4px 0;
         border-right: 4px solid $Normal-Accent;
     }
 
     a:only-child {
-        border-radius: $Radius-Normal;
+        border-radius: $Radius-Normal + 4px;
     }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 875px) {
     .navbar {
         flex-direction: column;
         height: fit-content;
@@ -196,70 +202,6 @@ main {
             justify-content: center;
         }
     }
-}
-
-// Markdown
-h1,
-h2,
-h3 {
-    font-family: 'Merriweather';
-}
-
-h1 {
-    font-size: $Large-Font-Size;
-}
-
-li::marker {
-    color: $Dark-Background;
-    font-size: $Normal-Font-Size / 0.75;
-}
-
-ol {
-    gap: $Padding-Normal;
-    display: flex;
-    padding-left: calc(#{$Normal-Font-Size} * 4);
-    flex-direction: column;
-}
-
-li {
-    padding-bottom: $Padding-Normal;
-    border-bottom: 1px dotted $Dark-Background;
-}
-
-li:last-of-type {
-    padding-bottom: 0;
-    border-bottom: 0;
-}
-
-main>h1 {
-    font-size: calc(#{$Large-Font-Size} * 1.5);
-    border-bottom: 1px dotted $Dark-Background;
-}
-
-main p {
-    padding-left: calc(#{$Normal-Font-Size} * 2);
-}
-
-main h2 {
-    padding-left: $Normal-Font-Size;
-}
-
-main div {
-    padding-left: $Normal-Font-Size;
-}
-
-hr {
-    width: 100%;
-    border: none;
-    border-bottom: 1px dotted $Dark-Background;
-}
-
-strong {
-    color: $Dark-Accent;
-}
-
-em {
-    color: $Dark-Secondary;
 }
 
 // Footer

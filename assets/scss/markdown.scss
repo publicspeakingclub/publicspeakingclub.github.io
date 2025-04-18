@@ -1,0 +1,65 @@
+@import 'variables.scss';
+
+// Markdown
+h1,
+h2,
+h3 {
+    font-family: 'Merriweather';
+}
+
+h1 {
+    font-size: $Large-Font-Size;
+}
+
+li::marker {
+    color: $Dark-Background;
+    font-size: $Normal-Font-Size / 0.75;
+}
+
+ol {
+    gap: $Padding-Normal;
+    display: flex;
+    padding-left: calc(#{$Normal-Font-Size} * 4);
+    flex-direction: column;
+}
+
+li {
+    padding-bottom: $Padding-Normal;
+    border-bottom: 1px dotted $Dark-Background;
+}
+
+li:last-of-type {
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+
+main>h1 {
+    font-size: calc(#{$Large-Font-Size} * 1.5);
+    border-bottom: 1px dotted $Dark-Background;
+}
+
+main p {
+    padding-left: calc(#{$Normal-Font-Size} * 2);
+}
+
+main h2 {
+    padding-left: $Normal-Font-Size;
+}
+
+main div {
+    padding-left: $Normal-Font-Size;
+}
+
+hr {
+    width: 100%;
+    border: none;
+    border-bottom: 1px dotted $Dark-Background;
+}
+
+strong {
+    color: $Dark-Accent;
+}
+
+em {
+    color: $Dark-Secondary;
+}
