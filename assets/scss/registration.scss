@@ -3,19 +3,36 @@
 main {
     display: flex;
     flex-direction: column;
+
+    gap: $Normal-Spacing * 3;
 }
 
 .form {
     background-color: $Light-Background;
     outline: $Dark-Background 1px solid;
     display: block;
-    min-height: 50vh;
-    height: 100%;
     width: 100%;
+    min-height: 50vh;
+    flex: 1;
     padding: 0;
 }
 
 .embed {
     width: 100%;
     height: 100%;
+}
+
+.linktoform {
+    color: $Light-White-Text;
+    border-radius: $Radius-Normal;
+    text-decoration: none;
+    padding: $Padding-Normal;
+    background-color: $Light-Accent;
+
+
+    transition: $Normal-Timing;
+
+    &:hover {
+        background-color: $Normal-Secondary;
+    }
 }

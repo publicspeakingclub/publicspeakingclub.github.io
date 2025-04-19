@@ -1,0 +1,84 @@
+@import 'variables.scss';
+
+main {
+    gap: $Normal-Spacing * 3;
+}
+
+.unstyledDiv {
+    padding: 0;
+}
+
+.eventCard {
+    height: fit-content;
+    max-height: 75vmax;
+    overflow: hidden;
+    width: 100%;
+    background-color: $Light-Background;
+    outline: 1px solid $Dark-Background;
+    display: flex;
+    flex-direction: row;
+
+    border-radius: $Radius-Normal;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    .imageDiv {
+        padding: $Normal-Spacing * 3;
+        aspect-ratio: 4/5;
+
+        max-width: 25%;
+        max-height: 350px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            border-radius: $Radius-Normal / 2;
+            outline: 1px solid $Dark-Background;
+            max-width: 100%;
+            aspect-ratio: 4/5;
+            max-height: 85%;
+        }
+    }
+
+    .twoImages {
+        justify-content: space-between;
+        flex-direction: column;
+        position: relative;
+        width: 25%;
+        max-height: 350px;
+        aspect-ratio: 4/5;
+        box-sizing: border-box;
+
+        img {
+            position: absolute;
+
+            border-radius: $Radius-Normal / 2;
+            outline: 1px solid $Dark-Background;
+            width: calc(65% - (#{$Normal-Spacing} * 6));
+            aspect-ratio: 4/5;
+            max-height: calc(65% - (#{$Normal-Spacing} * 6));
+        }
+
+        .img2 {
+            right: $Normal-Spacing * 6;
+            bottom: $Normal-Spacing * 6;
+        }
+
+        .img1 {
+            position: absolute;
+
+            left: $Normal-Spacing * 6;
+            top: $Normal-Spacing * 6;
+
+            border-radius: $Radius-Normal / 2;
+            outline: 1px solid $Dark-Background;
+            width: calc(70% - (#{$Normal-Spacing} * 6));
+            aspect-ratio: 4/5;
+            max-height: calc(70% - (#{$Normal-Spacing} * 6));
+        }
+    }
+}

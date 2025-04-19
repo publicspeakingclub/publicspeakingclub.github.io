@@ -67,6 +67,8 @@ main {
     gap: $Padding-Normal;
     align-items: center;
 
+    z-index: 200;
+
     @include Padding-Verticle(calc(#{$Padding-Normal}* 4));
 
     img {

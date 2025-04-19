@@ -28,18 +28,15 @@
             The BISC LIT FEST 2025 is Here</h2>
     </div>
 
-    <p class="description">
-        Attention, word nerds, stage divas, debate champions, and anyone who's ever tried to explain a song's meaning!
-        Welcome to BISC LIT FEST 2025. This isn't just a festival; it's a dynamic platform for literary skill
-        development. In today's rapidly evolving world, the ability to communicate effectively, think critically, and
-        engage creatively is paramount. Over the next few days, we're igniting imaginations with captivating author
-        talks, electrifying panel discussions, activities that'll unleash you inner writer, and vibrant performances
-        that bring stories to life. This festival will provide invaluable opportunities for students to refine their
-        writing, expand their analytical abilities, and cultivate a deeper appreciation for the power of expression. Our
-        goal is to foster a community of well- rounded individuals who can communicate effectively, think critically,
-        and express themselves with confidence and artistry. So, let's turn the page together and embark on an
-        unforgettable adventure through the boundless realm of literature.
-    </p>
+    <div class="images">
+        <img src='{{ (resources.Get "images/characters/5.png").Permalink }}'>
+        <img src='{{ (resources.Get "images/characters/6.png").Permalink }}'>
+        <img src='{{ (resources.Get "images/characters/7.png").Permalink }}'>
+        <img src='{{ (resources.Get "images/characters/8.png").Permalink }}'>
+        <img src='{{ (resources.Get "images/characters/9.png").Permalink }}'>
+        <img src='{{ (resources.Get "images/characters/10.png").Permalink }}'>
+        <img src='{{ (resources.Get "images/characters/11.png").Permalink }}'>
+    </div>
 
     <div class="timerCard">
         <div class="timer">
@@ -79,14 +76,18 @@
         setInterval(() => {updateTimer()}, 500);
     </script>
 
-    <div class="images">
-        <img src='{{ (resources.Get "images/posterartwork/1.png").Permalink }}'>
-        <img src='{{ (resources.Get "images/posterartwork/8.png").Permalink }}'>
-        <img src='{{ (resources.Get "images/posterartwork/5.png").Permalink }}'>
-        <img src='{{ (resources.Get "images/posterartwork/4.png").Permalink }}'>
-        <img src='{{ (resources.Get "images/posterartwork/6.png").Permalink }}'>
-        <img src='{{ (resources.Get "images/posterartwork/7.png").Permalink }}'>
-    </div>
+    <p class="description">
+        Attention, word nerds, stage divas, debate champions, and anyone who's ever tried to explain a song's meaning!
+        Welcome to BISC LIT FEST 2025. This isn't just a festival; it's a dynamic platform for literary skill
+        development. In today's rapidly evolving world, the ability to communicate effectively, think critically, and
+        engage creatively is paramount. Over the next few days, we're igniting imaginations with captivating author
+        talks, electrifying panel discussions, activities that'll unleash you inner writer, and vibrant performances
+        that bring stories to life. This festival will provide invaluable opportunities for students to refine their
+        writing, expand their analytical abilities, and cultivate a deeper appreciation for the power of expression. Our
+        goal is to foster a community of well- rounded individuals who can communicate effectively, think critically,
+        and express themselves with confidence and artistry. So, let's turn the page together and embark on an
+        unforgettable adventure through the boundless realm of literature.
+    </p>
 </div>
 
 {{end}}
