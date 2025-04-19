@@ -14,3 +14,21 @@
     width: 100%;
     height: 100%;
 }
+
+.linktoregister {
+    color: $Light-White-Text;
+    border-radius: $Radius-Normal * 3;
+    text-decoration: none;
+    width: fit-content;
+    align-self: center;
+    padding: calc(#{$Padding-Normal} * 2);
+    background-color: $Light-Accent;
+
+    font-size: $Large-Font-Size;
+
+    transition: $Normal-Timing;
+
+    &:hover {
+        background-color: $Normal-Secondary;
+    }
+}

@@ -1,1 +1,1 @@
-.maps{background-color:#f6ebc6;outline:#aca389 1px solid;flex:1;display:block;height:100%;width:100%;padding:0}.embed{width:100%;height:100%}
+.maps{background-color:#f6ebc6;outline:#aca389 1px solid;flex:1;display:block;height:100%;width:100%;padding:0}.embed{width:100%;height:100%}.linktoregister{color:#eaebff;border-radius:18px;text-decoration:none;width:fit-content;align-self:center;padding:calc(calc(max(min(1vw,4px),2px)) * 2);background-color:#3360f7;font-size:calc(max(min(6vw,32px),14px));transition:75ms}.linktoregister:hover{background-color:#40b746}
