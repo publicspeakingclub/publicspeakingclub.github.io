@@ -32,3 +32,25 @@
         background-color: $Normal-Secondary;
     }
 }
+
+.sponsors {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: $Normal-Spacing * 4;
+
+    img {
+        border-radius: $Radius-Normal;
+        outline: 1px solid $Dark-Background;
+    }
+
+    .tbplc {
+        outline: 0;
+        height: 15vmax;
+    }
+
+    .chaska,
+    .funville {
+        height: 10vmax;
+    }
+}

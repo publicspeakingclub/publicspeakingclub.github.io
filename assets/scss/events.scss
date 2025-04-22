@@ -44,41 +44,44 @@ main {
         }
     }
 
+    .description {
+        flex: 1;
+    }
+
     .twoImages {
-        justify-content: space-between;
-        flex-direction: column;
         position: relative;
+        aspect-ratio: 4/5;
+
         width: 25%;
         max-height: 350px;
-        aspect-ratio: 4/5;
-        box-sizing: border-box;
 
         img {
             position: absolute;
 
             border-radius: $Radius-Normal / 2;
             outline: 1px solid $Dark-Background;
-            width: calc(65% - (#{$Normal-Spacing} * 6));
+            max-width: calc(65% - (#{$Normal-Spacing} * 6));
             aspect-ratio: 4/5;
             max-height: calc(65% - (#{$Normal-Spacing} * 6));
         }
 
         .img2 {
-            right: $Normal-Spacing * 6;
             bottom: $Normal-Spacing * 6;
+            right: $Normal-Spacing * 6;
         }
 
         .img1 {
             position: absolute;
 
-            left: $Normal-Spacing * 6;
             top: $Normal-Spacing * 6;
+            right: $Normal-Spacing * 6;
+            transform: translate(-50%, 0);
 
             border-radius: $Radius-Normal / 2;
             outline: 1px solid $Dark-Background;
-            width: calc(70% - (#{$Normal-Spacing} * 6));
+            max-width: calc(65% - (#{$Normal-Spacing} * 6));
             aspect-ratio: 4/5;
-            max-height: calc(70% - (#{$Normal-Spacing} * 6));
+            max-height: calc(65% - (#{$Normal-Spacing} * 6));
         }
     }
 }
